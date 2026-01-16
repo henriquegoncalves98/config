@@ -15,7 +15,8 @@
 	changed = yellow bold
 	untracked = red bold
 [alias]
-	a = add --all
+	a = add
+	aa = add --all
 	ai = add -i
 	#############
 	ap = apply
@@ -141,13 +142,15 @@
 	resh = reset --soft HEAD
 	rehom = reset --hard origin/master
 	#############
+	rs = restore --staged # removes files from the staging area (index) but keeps your working directory changes intact
+	#############
 	r = remote
 	ra = remote add
 	rr = remote rm
 	rv = remote -v
 	rn = remote rename
 	rp = remote prune
-	rs = remote show
+	rsh = remote show
 	rao = remote add origin
 	rau = remote add upstream
 	rro = remote remove origin
